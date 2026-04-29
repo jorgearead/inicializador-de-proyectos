@@ -1,0 +1,6 @@
+services:
+  laravel:
+    build: .
+    container_name: laravel_installer
+    volumes:
+      - .:/var/www

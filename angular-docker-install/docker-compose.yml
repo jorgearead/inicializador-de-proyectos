@@ -1,0 +1,10 @@
+services:
+  angular-cli:
+    build: .
+    container_name: angular_factory
+    volumes:
+      - C:\laragon_new\www:/home/node/app
+    ports:
+      - "4200:4200"
+    stdin_open: true
+    tty: true

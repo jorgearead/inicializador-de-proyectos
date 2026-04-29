@@ -1,0 +1,10 @@
+services:
+  generator:
+    build: .
+    container_name: vue_app_generator
+    volumes:
+      # Mapea la carpeta actual del host a /app en el contenedor
+      - ${RUTA_PROYECTOS}:/app
+    # Permite que la terminal sea interactiva para responder las preguntas de Vue
+    stdin_open: true
+    tty: true
